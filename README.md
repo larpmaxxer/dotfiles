@@ -25,7 +25,7 @@ chmod +x install.sh
 ## 📦 needed packages
 
 ```
-sudo pacman -S --needed git swww waybar kitty hyprland wofi
+sudo pacman -S --needed git swww waybar kitty hyprland wofi blueman bluez bluez-utils
 ```
 
 ## 🖥️ default desktop
@@ -34,3 +34,4 @@ sudo pacman -S --needed git swww waybar kitty hyprland wofi
 ## 🎨 wallpaper
 https://external-preview.redd.it/LqJxJWL0fLswSJ29rluMQlBXPntbaPT9B1L1Eb58AjM.png?format=pjpg&auto=webp&s=e0a77171386cf841d3ff57405399094e35208129
 
+im still working on audio so right now it will only work via headphones/bluetooth
