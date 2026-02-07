@@ -21,3 +21,10 @@ git clone https://github.com/d0gjlol/dotfiles.git
 cd dotfiles
 chmod +x install.sh
 ./install.sh
+```
+
+## 📦 needed packages
+
+```
+sudo pacman -S swww waybar kitty hyprland wofi
+```
