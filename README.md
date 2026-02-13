@@ -30,7 +30,7 @@ cd dotfiles
 ## 📦 needed packages
 
 ```
-sudo pacman -S --needed pipewire git swww waybar kitty hyprland wofi blueman bluez bluez-utils
+sudo pacman -S --needed pipewire git swww waybar kitty hyprland wofi blueman bluez bluez-utils grim slurp
 ```
 
 ## 🖥️ default desktop
