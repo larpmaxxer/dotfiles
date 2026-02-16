@@ -13,6 +13,12 @@ my personal arch linux rice using:
 - `config/fish/` → fish shell config
 - `install.sh` → symlink installer with backups
 
+## 📦 needed packages
+
+```
+sudo pacman -S --needed pipewire git fish swww waybar kitty hyprland wofi blueman bluez bluez-utils grim slurp
+```
+
 ## 🚀 install
 ```bash
 git clone https://github.com/larptekk/dotfiles
@@ -25,12 +31,6 @@ chmod +x install.sh
 ```bash
 cd dotfiles
 ./uninstall.sh
-```
-
-## 📦 needed packages
-
-```
-sudo pacman -S --needed pipewire git swww waybar kitty hyprland wofi blueman bluez bluez-utils grim slurp
 ```
 
 ## 🎨 needed wallpaper (save as `wallpaper.jpg` and download to home folder)
