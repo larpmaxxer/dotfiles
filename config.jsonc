@@ -1,39 +1,63 @@
 {
   "layer": "top",
-  "position": "top",
-  "margin-top": 8,
-  "margin-left": 12,
-  "margin-right": 12,
-  "height": 36,
+  "position": "left",
+  "width": 48,
+  "spacing": 4,
+  "modules-left": ["image/arch", "hyprland/workspaces"],
+  "modules-center": ["cpu", "memory", "disk", "network", "pulseaudio", "clock"],
+  "modules-right": ["custom/power"],
 
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
-  "modules-right": ["cpu", "memory", "pulseaudio", "network", "tray"],
+  "image/arch": {
+    "path": "~/arch.png",
+    "size": 18,
+    "tooltip": false
+  },
 
   "hyprland/workspaces": {
-    "format": "{id}"
+    "format": "{id}",
+    "on-click": "activate",
+    "sort-by-number": true
   },
-  "clock": {
-    "format": "{:%H:%M}",
-    "tooltip-format": "{:%A, %B %d %Y}"
-  },
+
   "cpu": {
-    "format": "cpu {usage}%",
-    "interval": 5
+    "format": "{usage}%\nCPU",
+    "interval": 2,
+    "tooltip": false
   },
+
   "memory": {
-    "format": "mem {percentage}%"
+    "format": "{}%\nMEM",
+    "interval": 5,
+    "tooltip": false
   },
-  "pulseaudio": {
-    "format": "vol {volume}%",
-    "format-muted": "muted"
+
+  "disk": {
+    "format": "{percentage_used}%\nDSK",
+    "path": "/",
+    "interval": 30
   },
+
   "network": {
-    "format-wifi": "wifi",
-    "format-ethernet": "eth",
-    "format-disconnected": "off"
+    "format-wifi": "{signalStrength}%\nNET",
+    "format-ethernet": "󰈀\nETH",
+    "format-disconnected": "OFF\nNET",
+    "tooltip": false
   },
-  "tray": {
-    "spacing": 8
+
+  "pulseaudio": {
+    "format": "{volume}%\nVOL",
+    "format-muted": "MUTE\nVOL",
+    "on-click": "pavucontrol"
+  },
+
+  "clock": {
+    "format": "{:%H\n%M}",
+    "tooltip-format": "{:%A, %B %d, %Y}"
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "wlogout",
+    "tooltip": false
   }
 }
